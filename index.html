@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a id="navTitle" href="index.html" class="navbar-brand"></a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="form-inline">
+			<div class="form-group">
+				<input type="text" class="form-control" id="desc" placeholder="Descrição"/>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="amount" placeholder="Quantidade"/>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" id="value" placeholder="Valor"/>
+			</div>
+			<button onClick="addData();" id="btnAdd" class="btn btn-default">Adicionar</button>
+			<button onClick="resetForm();" id="btnReset" class="btn btn-default">Resetar</button>
+			<button onClick="deleteList();" id="btnDelete" class="btn btn-default">Deletar lista</button>
+			<span id="btnUpdate" style="display:none;">
+				<span id="inputIdUpdate"></span>
+				<button onClick="updateData();" class="btn btn-default">Save</button>
+				<button onClick="resetForm();" class="btn btn-default">Cancel</button>
+			</span>
+		</div>
+		<table id="listTable" class="table">
+
+		</table>
+		<span id="errors"></span>
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<h4 class="text-center text-success">Total <span id="totalValue">R$ 0,00</span></h4>
+		</div>
+	</nav>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -19,7 +19,9 @@ function setList(list){
 	}
 
 	getTotal(list);
+	resetForm();
 	savelistStorage(list);
+
 }
 
 function formatDesc(desc){

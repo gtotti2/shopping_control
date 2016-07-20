@@ -9,7 +9,7 @@ function getTotal(list){
 };
 
 function setList(list){
-	var table = '<table id="listTable" class="table"><thead><tr><td>Descrição</td><td>Quantidade</td><td>Valor</td><td>Ações</td></tr></thead><tbody>'
+	var table = '<table id="listTable" class="table"><thead><tr><td>Descrição</td><td>Valor</td><td>Quantidade</td><td>Ações</td></tr></thead><tbody>'
 	for(var key in list){
 		table += '<tr><td>' + formatDesc(list[key].desc) + '</td><td>' + formatValue(list[key].amount) + '</td><td>' + formatAmount(list[key].value) + '</td><td><button class="btn btn-default" onClick="setUpdate('+ key +');">Edit</button>   <button class="btn btn-default" onClick="deleteData('+ key +');">Delete</button></td></tr>'
 	}
